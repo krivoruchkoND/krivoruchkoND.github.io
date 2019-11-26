@@ -4,18 +4,19 @@
 	
 }
 .header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	position: relative;
 	width: 1500px;
 	margin: 0 auto;
+	background-color: #e9eae2;
 }
 .promo{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 1120px;
 	height: 665px;
-    padding-right: 115px;
-	box-sizing: border-box;
 	background-color: #e9eae2;
 }
 .logo{
@@ -42,17 +43,18 @@
 	margin-right: 0;
 }
 .selector{
+
 	width: 0;
 	height: 0;
 	box-sizing: border-box;	
-	border-left: 171.5px solid transparent;
-    border-right: 171.5px solid transparent;
-    border-top: 285px solid #f9c34a;
+	border-left: 175px solid transparent;
+    border-right: 166px solid transparent;
+    border-top: 283px solid #f9c34a;
 }
 .selector__img{
 	position: absolute;
-	top: -198px;
-    left: -9px;
+    top: -196px;
+    left: -12px;
 }
 .selector__button{
 	position: absolute;
@@ -63,17 +65,17 @@
 	cursor: pointer;
 }
 .selector__button_prev{
-	top: -180px;
-    left: -38px;
+    top: -177px;
+    left: -41px;
 }
 .selector__button_next{
-	top: -180px;
-    left: 26px;
+	top: -177px;
+    left: 23px;
 }
 .promo__item{
 	position:absolute;
-	top: 170px;
-    left: 140px;
+    top: 169px;
+    left: 142px;
 }
 .promo__img{
 	z-index: 1;
@@ -105,7 +107,8 @@
 	justify-content: center;
 	align-items: center;
 	width: 400px;
-	height: 100%;
+	height: 665px;
+	padding-right: 36px;
 }
 .author__img{
 	width: 60px;
@@ -132,4 +135,43 @@
 	font-weight: 100;
 	text-align: center;
 	margin: 0.7em 0;
+}
+.nav{
+	position: relative;
+	align-self: flex-start;
+	width: 382px;
+	height: 665px;
+	background-image: url('src/img/Layer 15.png'), 
+					linear-gradient(#142038, #142038);
+	background-blend-mode: soft-light;
+	background-position: right;
+	background-repeat: no-repeat;
+}
+.category-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    height: 205px;
+	position: absolute;
+	top: 60px;
+    left: -70px;
+}
+.category{
+	position: relative;
+	height: 60px;
+	width: 70px;
+	cursor: pointer;
+}
+.category_img{
+	height: 60px;
+	width: 70px;
+	box-sizing: border-box;
+    padding-right: 8px;
+	object-fit: none;
+}
+.category input[type="radio"]{
+	display: none;
+}
+.category input[type="radio"]:checked + .category_img{
+	background-color: #86d8cd;
 }
