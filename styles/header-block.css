@@ -15,9 +15,6 @@
 	background-color: #e9eae2;
 }
 .logo{
-	position: absolute;
-	top: 20px;
-	left: 20px;
 	display: block;
 	width: 48px;
 	height: 48px;
@@ -28,6 +25,11 @@
 	background-size: 24px 24px;
 	background-position: right bottom, left bottom, right top, left top;
 	background-repeat: no-repeat;
+}
+.header__logo{
+	position: absolute;
+	top: 20px;
+	left: 20px;
 }
 .selector{
 	position: relative;
