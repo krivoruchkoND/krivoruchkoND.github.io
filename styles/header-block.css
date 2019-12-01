@@ -1,8 +1,3 @@
-.page{
-	margin: 0;
-	padding: 0;
-	background-color: yellow;
-}
 .header{
 	display: flex;
 	justify-content: space-between;
@@ -20,6 +15,9 @@
 	background-color: #e9eae2;
 }
 .logo{
+	position: absolute;
+	top: 20px;
+	left: 20px;
 	display: block;
 	width: 48px;
 	height: 48px;
@@ -31,18 +29,11 @@
 	background-position: right bottom, left bottom, right top, left top;
 	background-repeat: no-repeat;
 }
-.promo__logo{
-	position: absolute;
-	top: 20px;
-	left: 20px;
-}
-.promo__selector{
+.selector{
 	position: relative;
 	align-self: flex-start;
 	margin-left: 185px;
 	margin-right: 0;
-}
-.selector{
 	width: : 0;
 	height: 0;
 	box-sizing: border-box;	
@@ -50,47 +41,40 @@
     border-right: 166px solid transparent;
     border-top: 283px solid #f9c34a;
 }
-.selector__img{
+.selector__container{
 	position: absolute;
     top: -196px;
-    left: -12px;
+    left: -42px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    width: 85px;
 }
 .selector__button{
-	position: absolute;
 	border:none;
 	background-color: transparent;
 	color:#c19226;
 	transform: scaleY(2);
 	cursor: pointer;
 }
-.selector__button_prev{
-    top: -177px;
-    left: -41px;
-}
-.selector__button_next{
-	top: -177px;
-    left: 23px;
-}
-.promo__item{
+.promo-product{
 	position:absolute;
     top: 169px;
     left: 142px;
 }
-.promo__img{
-	z-index: 1;
+.promo-product__img{
 	width: 415px;
 	height: 523px;
 	mix-blend-mode: multiply;
 }
-.promo__info{
+.promo-product__info{
 	display: block;
 	position: absolute;
 	left: -90px;
     top: 40px;
     text-decoration: none;
 }
-.promo__name,
-.promo__price{
+.promo-product__text{
 	margin: 0;
 	font-size: 28px;
 	line-height: 37px;
@@ -98,19 +82,16 @@
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 	text-transform: capitalize;
-	
 }
-.author{
+.promo-author{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 300px;
-}
-.promo__author{
 	padding-right: 36px;
 }
-.author__img{
+.promo-author__img{
 	width: 60px;
     height: 60px;
     object-fit: cover;
@@ -118,7 +99,7 @@
     border-radius: 50%;
     filter: grayscale(1);
 }
-.author__name{
+.promo-author__name{
 	font-size: 16px;
 	line-height: 17px;
 	color: #adada7;
@@ -126,7 +107,7 @@
 	font-weight: 900;
 	text-transform: uppercase;
 }
-.author__headline{
+.promo-author__headline{
 	width: 330px;
     font-size: 3.56em;
 	line-height: 60px;
@@ -216,80 +197,4 @@
 .link__img{
 	height: 35px;
 	object-fit: none;
-}
-.main{
-	width: 1500px;
-	margin: 0 auto;
-	background-color: #ffffff;
-}
-.item{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	overflow: hidden;
-}
-.item__logo{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	width: 360px;
-	height: 372px;
-	padding: 30px 0px 0px 10px;
-    box-sizing: border-box;
-	background-color: #7dd5c9;
-}
-.item__logo img{
-	margin-bottom: 35px;
-}
-.item__logo:after{
-  display: block;
-  position: absolute;
-  top: 0;
-  right: -10px;
-  content: "";
-  width: 20px;
-  height: 100%;
-  background: transparent;
-  background-image: linear-gradient(to bottom left, transparent 50%, #7dd5c9 50%),
-                    linear-gradient(to top left, transparent 50%, #7dd5c9 50%);  
-  background-repeat: repeat-y;
-  background-position: 0 10px;
-  background-size: 20px 20px;
-}
-.item__logo p{
-	margin: 0;
-	font-size: 21px;
-	line-height: 26px;
-	color: #266258;
-	font-family: "Roboto";
-	font-weight: 300;
-	text-transform: uppercase;
-}
-.item__logo p:last-child{
-	font-size: 14px;
-	color: #438a7e;
-	font-family: "Roboto";
-	font-weight: 500;
-}
-.item_left{
-	margin-right: 20px;
-}
-.item__info{
-	display: flex;
-	flex-direction: column;
-}
-.item__img{
-	align-self: flex-end;
-}
-.main__author{
-    padding: 75px 115px 0 0;
-    margin-left: -111px;
-}
-.main__headline{
-	text-align: left;
-	text-align: left;
-    width: 35%;
-    margin: 0.21em 0 1em 0;
 }
